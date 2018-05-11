@@ -1,0 +1,5 @@
+// Sizing function
+
+@function px-to-pc($target, $content:16) {
+  @return percentage($target/$content);
+}

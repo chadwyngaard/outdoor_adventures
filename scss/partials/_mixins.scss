@@ -1,3 +1,6 @@
+@import "partials/variables",
+        "partials/color-functions";
+
 // styling for site-background
 @mixin background {
   background-position: center;
@@ -11,15 +14,22 @@
 @mixin logo{
   transform: scale(1.4);
   position: relative;
-  left: 25%;
+  left: 35%;
+}
+
+@mixin logo-header {
+  transform: scale(0.5);
+  position: absolute;
+  top: -1%;
+  left: 33%;
 }
 
 // styling for footer
 @mixin footer {
   position: fixed;
   bottom: 2%;
-  left: 40%;
-  color: #FFFF;
+  left: 45%;
+  color: $textColor;
 }
 
 // rotation animation
@@ -29,35 +39,4 @@
   50% {transform: rotateY(180deg);}
   75% {transform: rotateY(270deg);}
   100% {transform: rotateY(360deg);}
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-image: url(../images/site-background.jpg);
-  @include background;
-  height: 100vh;
-
-    .container {
-
-      @keyframes rotation {
-        @include rotation-animation;
-      }
-       .rotate-logo {
-         animation-name: rotation;
-         animation-duration: 4s;
-         animation-delay: 3s;
-         animation-iteration-count: infinite;
-
-         .access-point {
-           @include logo;
-         }
-       }
-
-       footer {
-        @include footer;
-       }
-   }
 }

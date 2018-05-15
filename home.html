@@ -12,7 +12,15 @@
       <div class="navbar">
 
         <a href="home.html">home</a>
-        <a href="#">catergories</a>
+        <div class="catergory-dropdown">
+          <a href="#">catergories</a>
+          <div class="dropdown-content">
+            <a href="#camping">Camping</a>
+            <a href="#fishing">Fishing</a>
+            <a href="#hiking">Hiking</a>
+            <a href="#rock-climbing">Rock Climbing</a>
+          </div>
+        </div>
         <a href="gallery.html">gallery</a>
         <a href="contact.html">contact us</a>
 
@@ -22,7 +30,7 @@
 
         <div class="logo"><a href="home.html"><img class="access-point" src="logo/company-logo.png" alt="company-logo"></a></div>
 
-        <h1>Outdoor Adventures</h1>
+        <header><h1>Outdoor Adventures</h1></header>
 
         <p>"Life is better outside"</p>
 
@@ -32,12 +40,32 @@
 
         <div class="homepage_gallery">
 
-          <img src="images/camp.jpg" alt="camping">
-          <img src="images/fish.jpg" alt="fishing">
-          <img src="images/hike.jpg" alt="hiking">
-          <img src="images/rockclimb.jpg" alt="rockclimbing">
+          <div class="frame">
+            <img id="camping" src="images/camp.jpg" alt="camping">
+             <div class="overlay-hover">
+               <div class="overlay-text">camping</div>
+             </div>
+          </div>
+          <div class="frame">
+            <img id="fishing" src="images/fish.jpg" alt="fishing">
+             <div class="overlay-hover">
+               <div class="overlay-text">fishing</div>
+             </div>
+          </div>
+          <div class="frame">
+            <img id="hiking" src="images/hike.jpg" alt="hiking">
+             <div class="overlay-hover">
+               <div class="overlay-text">hiking</div>
+             </div>
+          </div>
+          <div class="frame">
+            <img id="rock-climbing" src="images/rockclimb.jpg" alt="rockclimbing">
+             <div class="overlay-hover">
+               <div class="overlay-text">rock climbing</div>
+             </div>
+          </div>
 
-        </div>
+          </div>
 
       </div>
 

@@ -30,9 +30,8 @@ body {
       position: relative;
       left: 35%; }
   body .container footer {
-    position: fixed;
-    bottom: 2%;
-    left: 45%;
-    color: #FFFF; }
+    position: absolute;
+    bottom: -5%;
+    left: 16%; }
 
 /*# sourceMappingURL=access_style.css.map */

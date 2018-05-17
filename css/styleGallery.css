@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../images/site-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: gray;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  body .container nav {
+    margin-left: 29%;
+    margin-top: 5%;
+    /* The container <div> - needed to position the dropdown content */
+    /* Dropdown Content (Hidden by Default) */
+    /* Links inside the dropdown */
+    /* Change color of dropdown links on hover */
+    /* Show the dropdown menu on hover */ }
+    body .container nav a {
+      text-decoration: none;
+      color: #FFFF;
+      margin-left: 5%;
+      font-size: 125%;
+      text-transform: uppercase; }
+      body .container nav a:hover {
+        background-color: rgba(0, 0, 0, 0.5); }
+    body .container nav .catergory-dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left: 3%; }
+    body .container nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      min-width: 156.25%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 5; }
+    body .container nav .dropdown-content a {
+      color: #FFFF;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block; }
+    body .container nav .dropdown-content a:hover {
+      background-color: #FF4C33; }
+    body .container nav .catergory-dropdown:hover .dropdown-content {
+      display: block; }
+  body .container .content {
+    margin-top: 5%;
+    position: absolute;
+    left: 18%; }
+    body .container .content .gallery-grid-camping {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 1%; }
+    body .container .content .gallery-grid-fishing {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 1%; }
+    body .container .content .gallery-grid-hiking {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 1%; }
+    body .container .content .gallery-grid-rockclimbing {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 1%; }
+    body .container .content img {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      max-width: 100%;
+      align-items: stretch; }
+  body .container footer {
+    position: relative;
+    bottom: -17%;
+    left: 16%; }
+    body .container footer p {
+      color: #FFFF; }
+
+/*# sourceMappingURL=styleGallery.css.map */

@@ -13,11 +13,57 @@ body {
   @include background;
   height: 100vh;
 
-    .container {
+  #sidebar {
+    position: absolute;
+    top: 37%;
+    left: 0%;
 
+      a {
+          position: absolute;
+          left: -80px;
+          transition: 0.3s;
+          padding: 15px;
+          width: 100px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+          border-radius: 0 5px 5px 0;
+
+            &:hover {
+              left: 0;
+            }
+      }
+
+      #Blog {
+          top: 20px;
+          background-color: $imageOverlay;
+      }
+
+      #Gear {
+          top: 80px;
+          background-color: $imageOverlay;
+      }
+
+      #Videos {
+          top: 140px;
+          background-color: $imageOverlay;
+      }
+
+      #What_to_do {
+          top: 200px;
+          background-color: $imageOverlay;
+      }
+    }
+
+
+    .container {
       nav {
         margin-left: 29%;
         margin-top: 5%;
+
+        .selected {
+          color: $logoColor;
+        }
 
         a {
           text-decoration: none;
@@ -67,7 +113,7 @@ body {
         }
 
       }
-/////////////////////////////////home page styling starts here//////////////////////////////////////////
+/////////////////////////////////Home content styling starts here//////////////////////////////////////////
       header {
          .logo {
            .access-point {
@@ -114,8 +160,7 @@ body {
         }
 
         .frame {
-            position: relative;
-            width: 100%;
+          @include hover-overlay;
         }
           #camping, #fishing, #hiking, #rock-climbing {
             display: block;
@@ -168,33 +213,12 @@ body {
                }
             }
 
-            .camping-information {
-              grid-column: 1/2;
-            }
 
-            .fishing-information {
-              grid-column: 2/3;
-              margin-left: 4%;
-            }
-
-            .hiking-information {
-              grid-column: 3/4;
-              margin-left: 8%;
-            }
-
-            .rockclimbing-information {
-              grid-column: 4/5;
-              margin-left: 12%;
-              width: 100%;
-            }
-
-            /* Popup box BEGIN */
+            /* Pop-out box: camping BEGIN */
             .pop_out {
               @include pop-out-feature;
             }
-            .pop_out .helper{
-              @include pop-out-helper;
-            }
+
             .pop_out>div {
               @include pop-out-div;
             }
@@ -208,15 +232,13 @@ body {
             .pop_outtrigger {
                 cursor: pointer;
             }
-            /* Popup box BEGIN */
+            /* Pop-out box: camping END */
 
-            /* Popup box1 BEGIN */
+            /* Pop-out box: fishing BEGIN */
             .pop_out1 {
               @include pop-out-feature;
             }
-            .pop_out1 .helper{
-              @include pop-out-helper;
-            }
+
             .pop_out1>div {
               @include pop-out-div;
             }
@@ -230,15 +252,13 @@ body {
             .pop_outtrigger1 {
                 cursor: pointer;
             }
-            /* Popup box1 END */
+            /* Pop-out box: fishing END */
 
-            /* Popup box2 BEGIN */
+            /* Pop-out box: hiking BEGIN */
             .pop_out2 {
               @include pop-out-feature;
             }
-            .pop_out2 .helper{
-              @include pop-out-helper;
-            }
+
             .pop_out2>div {
               @include pop-out-div;
             }
@@ -252,15 +272,13 @@ body {
             .pop_outtrigger2 {
                 cursor: pointer;
             }
-            /* Popup box2 END*/
+            /* Pop-out box: hiking END*/
 
-            /* Popup box3 BEGIN */
+            /* Pop-out box: rock climbing BEGIN */
             .pop_out3 {
               @include pop-out-feature;
             }
-            .pop_out3 .helper{
-              @include pop-out-helper;
-            }
+
             .pop_out3>div {
               @include pop-out-div;
             }
@@ -274,12 +292,12 @@ body {
             .pop_outtrigger3 {
                 cursor: pointer;
             }
-            /* Popup box3 END */
+            /* Pop-out box: rock climbing END */
 
           }
-///////////////////////////////////home page styling ends here////////////////////////////////////
-
-      }
+        }
+///////////////////////////////////Home content styling ends here////////////////////////////////////
+         /*Styles the footer*/
         footer {
           @include footer;
           p{

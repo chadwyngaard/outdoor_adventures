@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <title>Outdoor Adventures| Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styleHome.css">
     <link rel="icon" type="image/png" href="logo/company-logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -12,7 +13,7 @@
 
       <nav class="navbar">
 
-        <a href="home.html">home</a>
+        <a class="selected" href="home.html">home</a>
         <div class="catergory-dropdown">
           <a href="#">catergories</a>
           <div class="dropdown-content">
@@ -36,6 +37,13 @@
         <p>"Life is better outside"</p>
 
       </header>
+
+      <div id="sidebar">
+        <a href="https://outdoortribe.co.za/" id="Blog">Blog</a>
+        <a href="https://www.capeunionmart.co.za/" id="Gear">Gear</a>
+        <a href="https://vimeo.com/channels/eoadaily" id="Videos">Videos</a>
+        <a href="https://insideguide.co.za/cape-town/activities-in-cape-town/" id="What_to_do">What to do</a>
+      </div>
 
       <div class="content">
 
@@ -71,7 +79,6 @@
             <section class="camping-information">
 
               <div class="pop_out">
-                  <span class="helper"></span>
                   <div>
                       <div class="closebutton">X</div>
                       <p>Camping is an outdoor activity involving overnight stays away from home in a shelter, such as a tent.</p>
@@ -85,7 +92,6 @@
             <section class="fishing-information">
 
               <div class="pop_out1">
-                  <span class="helper"></span>
                   <div>
                       <div class="closebutton1">X</div>
                       <p>Fishing is the activity of trying to catch fish. Fish are normally caught in the wild. Techniques for catching fish include hand gathering, spearing, netting, angling and trapping. Fishing may include catching aquatic animals other than fish.</p>
@@ -96,10 +102,9 @@
             <section class="hiking-information">
 
               <div class="pop_out2">
-                  <span class="helper"></span>
                   <div>
                       <div class="closebutton2">X</div>
-                      <p>Hiking is an outdoor activity which consists of walking in natural environments, often on hiking trails. It is such a popular activity that there are numerous hiking organizations worldwide. The health benefits of different types of hiking have been confirmed in studies. The word </p>
+                      <p>Hiking is an outdoor activity which consists of walking in natural environments, often on hiking trails. It is such a popular activity that there are numerous hiking organizations worldwide. The health benefits of different types of hiking have been confirmed in studies.</p>
                       <a href="https://www.sa-venues.com/activities/western-cape-hiking-trails.htm">Locations to visit</a>
               </div>
             </section>
@@ -107,7 +112,6 @@
             <section class="rockclimbing-information">
 
               <div class="pop_out3">
-                  <span class="helper"></span>
                   <div>
                       <div class="closebutton3">X</div>
                       <p>Rock climbing is an activity in which participants climb up, down or across natural rock formations or artificial rock walls. The goal is to reach the summit of a formation or the endpoint of a pre-defined route without falling.</p>
@@ -126,8 +130,10 @@
 
       </footer>
     </div>
-    <script>
 
+<!-- ///////////////////////////JavaScript styling//////////////////////////////////    -->
+    <script>
+////////////////////Pop-out information feature - repeated for each image/////////////////
       $(window).on('load', function () {
           $(".pop_outtrigger").click(function(){
              $('.pop_out').show();

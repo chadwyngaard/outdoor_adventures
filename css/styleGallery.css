@@ -9,6 +9,34 @@ body {
   background-blend-mode: screen;
   background-repeat: no-repeat;
   height: 100vh; }
+  body #sidebar {
+    position: absolute;
+    top: 37%;
+    left: 0%; }
+    body #sidebar a {
+      position: absolute;
+      left: -80px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 100px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0; }
+      body #sidebar a:hover {
+        left: 0; }
+    body #sidebar #Blog {
+      top: 20px;
+      background-color: rgba(255, 76, 51, 0.5); }
+    body #sidebar #Gear {
+      top: 80px;
+      background-color: rgba(255, 76, 51, 0.5); }
+    body #sidebar #Videos {
+      top: 140px;
+      background-color: rgba(255, 76, 51, 0.5); }
+    body #sidebar #What_to_do {
+      top: 200px;
+      background-color: rgba(255, 76, 51, 0.5); }
   body .container nav {
     margin-left: 29%;
     margin-top: 5%;
@@ -17,6 +45,8 @@ body {
     /* Links inside the dropdown */
     /* Change color of dropdown links on hover */
     /* Show the dropdown menu on hover */ }
+    body .container nav .selected {
+      color: #FF4C33; }
     body .container nav a {
       text-decoration: none;
       color: #FFFF;
@@ -70,10 +100,16 @@ body {
       box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
       max-width: 100%;
       align-items: stretch; }
+      body .container .content img:hover {
+        transform: scale(2);
+        z-index: 5; }
+    body .container .content h5 {
+      color: #FFFF;
+      text-transform: uppercase; }
   body .container footer {
-    position: relative;
-    bottom: -17%;
-    left: 16%; }
+    position: absolute;
+    bottom: -43%;
+    left: 44%; }
     body .container footer p {
       color: #FFFF; }
 

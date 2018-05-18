@@ -1,55 +1,38 @@
 @import "partials/variables",
         "partials/color-functions";
 
-// styling for site-background
-@mixin background {
-  background-position: center;
-  background-size:  cover;
-  background-color: gray;
-  background-blend-mode: screen;
-  background-repeat: no-repeat;
-}
 
-// styling for logo
-@mixin logo{
-  transform: scale(1.4);
-  position: relative;
-  left: 35%;
-}
+/////////////////////////HEADER////////////////////////////////////////
+
+///////////styling for logo///////////////////////////
 
 @mixin logo-header {
-  transform: scale(0.5);
+  transform: scale(0.5); ///////increases the size of the logo//////
   position: absolute;
   top: -1%;
   left: 33%;
 }
 
-// styling for footer
-@mixin footer {
-  position: relative;
-  bottom: -17%;
-  left: 16%;
+/////////////////////////BODY////////////////////////////////////////
+
+////////////styling for webpage background///////////
+@mixin background {
+  background-position: center;
+  background-size:  cover; //////image covers entire page////
+  background-color: gray;
+  background-blend-mode: screen; //////fades background-color into background-image//////
+  background-repeat: no-repeat;
 }
 
-// rotation animation
-@mixin rotation-animation {
-  0%{transform: rotateY(0deg);}
-  25% {transform: rotateY(90deg);}
-  50% {transform: rotateY(180deg);}
-  75% {transform: rotateY(270deg);}
-  100% {transform: rotateY(360deg);}
-}
-
+/////////////styling for pop-out feature and image overlay on homepage/////////////////
 @mixin hover-overlay {
-  .frame {
   position: relative;
-  width: 50%;
-}
+  width: 100%;
 }
 
 @mixin pop-out-feature {
   cursor:pointer;
-  display:none;
+  display:none;///////hides the pop-out until clicked///////
   height:100%;
   position:absolute;
   text-align:center;
@@ -58,17 +41,11 @@
   line-height: 120%;
   top:0;
   width:100%;
-  z-index:10;
-}
-
-@mixin pop-out-helper {
-  display:inline-block;
-  height:100%;
-  vertical-align:middle;
+  z-index:10; ///////displays and layers the pop-out above everything else - puts it on top"
 }
 
 @mixin pop-out-div {
-  background-color: #fff;
+  background-color: rgba(#fff, 0.8); /////////create an opacified white////////
   box-shadow: 10px 10px 60px #555;
   display: inline-block;
   height: auto;
@@ -81,7 +58,7 @@
   padding: 2% 5%;
 }
 
-@mixin closebutton {
+@mixin closebutton { //////////styles the closing button - marked "X"////////////
   background-color: #fff;
   border: 3px solid #999;
   border-radius: 50px;
@@ -99,6 +76,7 @@
   text-align: center;
 }
 
+/////////////////styling for gallery-grid on gallery page///////////////////////
 @mixin gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -110,4 +88,31 @@
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
   align-items: stretch;
+   &:hover {
+     transform: scale(2);////////enlarges the image by 2/////////
+     z-index: 5;
+   }
+}
+
+/////////////////////////FOOTER////////////////////////////////////////
+
+////////////styling for footer - homepage///////////
+@mixin footer {/////sets the exact position//////
+  position: absolute;
+  bottom: -30%;
+  left: 14%;
+}
+
+///////////////styling for footer - gallery page/////////
+@mixin footer-version2 {/////sets the exact position//////
+  position: absolute;
+  bottom: -43%;
+  left: 44%;
+}
+
+/////////////styling for footer - contact page//////////
+@mixin footer-version3 {/////sets the exact position//////
+  position: absolute;
+  bottom: -10%;
+  left: 44%;
 }

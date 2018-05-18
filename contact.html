@@ -12,17 +12,17 @@
       <nav>
 
         <a href="home.html">home</a>
-        <div class="catergory-dropdown">
-          <a href="home.html">catergories</a>
-          <div class="dropdown-content">
-            <a href="home.html">Camping</a>
-            <a href="home.html">Fishing</a>
-            <a href="home.html">Hiking</a>
-            <a href="home.html">Rock Climbing</a>
+          <div class="catergory-dropdown">
+            <a href="home.html">catergories</a>
+            <div class="dropdown-content">
+              <a href="home.html">Camping</a>
+              <a href="home.html">Fishing</a>
+              <a href="home.html">Hiking</a>
+              <a href="home.html">Rock Climbing</a>
+            </div>
           </div>
-        </div>
-            <a href="gallery.html">gallery</a>
-            <a href="contact.html">contact us</a>
+        <a href="gallery.html">gallery</a>
+        <a class="selected" href="contact.html">contact us</a>
 
       </nav>
 
@@ -31,6 +31,41 @@
       </header>
 
       <div class="content">
+
+        <section class="sub-message">
+          <p>Got a question? We'd love to hear from you. Send us a message and we will respond as soon as possible.</p>
+        </section>
+
+        <div id="sidebar">
+          <a href="https://outdoortribe.co.za/" id="Blog">Blog</a>
+          <a href="https://www.capeunionmart.co.za/" id="Gear">Gear</a>
+          <a href="https://vimeo.com/channels/eoadaily" id="Videos">Videos</a>
+          <a href="https://insideguide.co.za/cape-town/activities-in-cape-town/" id="What_to_do">What to do</a>
+        </div>
+
+        <section class="contact-form">
+
+          <form class="form-format" action="somescript.php" method="post">
+
+            <div class="space"><select name="Title">
+              <!-- Added this feature for user experience -->
+              <option value="Subject">Select Subject</option>
+              <option value="Camping">Camping</option>
+              <option value="Fishing">Fishing</option>
+              <option value="Hiking">Hiking</option>
+              <option value="Rock Climbing">Rock Climbing</option>
+              <option value="Other">Other</option>
+            </select></div>
+            <div class="space"><input class="boxspace messagebox webkit-me" type="text" name="message" placeholder="Message"  maxlength="100" required></div>
+            <div class="space"><input class="webkit-me" type="text" name="first_name" pattern="[A-Za-z]{0,}" placeholder="First Name" maxlength="20" required>
+            <input class=" webkit-me" type="text" name="last_name" pattern="[A-Za-z]{0,}" placeholder="Last Name" maxlength="30" required></div>
+            <div class="space"><input class="boxspace webkit-me" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Your Email" required></div>
+
+              <input id="submit-button" type="submit" name="submit" value="Submit">
+
+          </form>
+
+        </section>
 
       </div>
 

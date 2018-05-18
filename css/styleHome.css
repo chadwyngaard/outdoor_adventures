@@ -9,333 +9,337 @@ body {
   background-blend-mode: screen;
   background-repeat: no-repeat;
   height: 100vh; }
-  body .container nav {
-    margin-left: 29%;
-    margin-top: 5%;
-    /* The container <div> - needed to position the dropdown content */
-    /* Dropdown Content (Hidden by Default) */
-    /* Links inside the dropdown */
-    /* Change color of dropdown links on hover */
-    /* Show the dropdown menu on hover */ }
-    body .container nav a {
-      text-decoration: none;
-      color: #FFFF;
-      margin-left: 5%;
-      font-size: 125%;
-      text-transform: uppercase; }
-      body .container nav a:hover {
-        background-color: rgba(0, 0, 0, 0.5); }
-    body .container nav .catergory-dropdown {
-      position: relative;
-      display: inline-block;
-      margin-left: 3%; }
-    body .container nav .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
-      min-width: 156.25%;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 5; }
-    body .container nav .dropdown-content a {
-      color: #FFFF;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block; }
-    body .container nav .dropdown-content a:hover {
-      background-color: #FF4C33; }
-    body .container nav .catergory-dropdown:hover .dropdown-content {
-      display: block; }
-  body .container header .logo .access-point {
-    transform: scale(0.5);
-    position: absolute;
-    top: -1%;
-    left: 33%; }
-  body .container header h1 {
-    position: absolute;
-    top: 26%;
-    left: 41%;
-    z-index: 2;
-    color: #222;
-    text-shadow: 0px 2px 3px #555; }
-  body .container header p {
+  body #sidebar {
     position: absolute;
     top: 37%;
-    left: 45.5%;
-    z-index: 2; }
-  body .container .content {
-    position: absolute;
-    left: 35%; }
-    body .container .content .homepage_gallery {
-      display: grid;
-      grid-template-columns: repeat(4, 25%);
-      grid-auto-rows: 20%;
-      grid-gap: 1%;
-      align-items: center;
-      margin-top: 30%;
-      margin-left: -27%;
-      position: relative;
-      left: -14%; }
-    body .container .content .homepage_gallery > img {
-      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-      max-width: 100%; }
-    body .container .content .frame {
-      position: relative;
-      width: 100%; }
-    body .container .content #camping, body .container .content #fishing, body .container .content #hiking, body .container .content #rock-climbing {
-      display: block;
-      width: 100%;
-      height: auto; }
-    body .container .content .overlay-hover {
+    left: 0%; }
+    body #sidebar a {
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #FF4C33; }
-    body .container .content .frame:hover .overlay-hover {
-      opacity: 1; }
-    body .container .content .overlay-text {
-      color: white;
+      left: -80px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 100px;
+      text-decoration: none;
       font-size: 20px;
-      text-transform: uppercase;
+      color: white;
+      border-radius: 0 5px 5px 0; }
+      body #sidebar a:hover {
+        left: 0; }
+    body #sidebar #Blog {
+      top: 20px;
+      background-color: rgba(255, 76, 51, 0.5); }
+    body #sidebar #Gear {
+      top: 80px;
+      background-color: rgba(255, 76, 51, 0.5); }
+    body #sidebar #Videos {
+      top: 140px;
+      background-color: rgba(255, 76, 51, 0.5); }
+    body #sidebar #What_to_do {
+      top: 200px;
+      background-color: rgba(255, 76, 51, 0.5); }
+  body .container {
+    /*Styles the footer*/ }
+    body .container nav {
+      margin-left: 29%;
+      margin-top: 5%;
+      /* The container <div> - needed to position the dropdown content */
+      /* Dropdown Content (Hidden by Default) */
+      /* Links inside the dropdown */
+      /* Change color of dropdown links on hover */
+      /* Show the dropdown menu on hover */ }
+      body .container nav .selected {
+        color: #FF4C33; }
+      body .container nav a {
+        text-decoration: none;
+        color: #FFFF;
+        margin-left: 5%;
+        font-size: 125%;
+        text-transform: uppercase; }
+        body .container nav a:hover {
+          background-color: rgba(0, 0, 0, 0.5); }
+      body .container nav .catergory-dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left: 3%; }
+      body .container nav .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        min-width: 156.25%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 5; }
+      body .container nav .dropdown-content a {
+        color: #FFFF;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block; }
+      body .container nav .dropdown-content a:hover {
+        background-color: #FF4C33; }
+      body .container nav .catergory-dropdown:hover .dropdown-content {
+        display: block; }
+    body .container header .logo .access-point {
+      transform: scale(0.5);
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center; }
-    body .container .content .catergory-information {
-      display: grid;
-      grid-template-columns: repeat(4, 100%);
-      margin-top: 10%;
-      margin-bottom: 5%;
-      /* Popup box BEGIN */
-      /* Popup box BEGIN */
-      /* Popup box1 BEGIN */
-      /* Popup box1 END */
-      /* Popup box2 BEGIN */
-      /* Popup box2 END*/
-      /* Popup box3 BEGIN */
-      /* Popup box3 END */ }
-      body .container .content .catergory-information a {
-        color: #FF4C33;
-        text-decoration: none; }
-        body .container .content .catergory-information a:hover {
-          background-color: rgba(0, 0, 0, 0.5);
-          color: #FFFF; }
-      body .container .content .catergory-information .camping-information {
-        grid-column: 1/2; }
-      body .container .content .catergory-information .fishing-information {
-        grid-column: 2/3;
-        margin-left: 4%; }
-      body .container .content .catergory-information .hiking-information {
-        grid-column: 3/4;
-        margin-left: 8%; }
-      body .container .content .catergory-information .rockclimbing-information {
-        grid-column: 4/5;
-        margin-left: 12%;
+      top: -1%;
+      left: 33%; }
+    body .container header h1 {
+      position: absolute;
+      top: 26%;
+      left: 41%;
+      z-index: 2;
+      color: #222;
+      text-shadow: 0px 2px 3px #555; }
+    body .container header p {
+      position: absolute;
+      top: 37%;
+      left: 45.5%;
+      z-index: 2; }
+    body .container .content {
+      position: absolute;
+      left: 35%; }
+      body .container .content .homepage_gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-auto-rows: 20%;
+        grid-gap: 1%;
+        align-items: center;
+        margin-top: 30%;
+        margin-left: -27%;
+        position: relative;
+        left: -14%; }
+      body .container .content .homepage_gallery > img {
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        max-width: 100%; }
+      body .container .content .frame {
+        position: relative;
         width: 100%; }
-      body .container .content .catergory-information .pop_out {
-        cursor: pointer;
-        display: none;
-        height: 100%;
-        position: absolute;
-        text-align: center;
-        font-size: 120%;
-        font-weight: bold;
-        line-height: 120%;
-        top: 0;
+      body .container .content #camping, body .container .content #fishing, body .container .content #hiking, body .container .content #rock-climbing {
+        display: block;
         width: 100%;
-        z-index: 10; }
-      body .container .content .catergory-information .pop_out .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle; }
-      body .container .content .catergory-information .pop_out > div {
-        background-color: #fff;
-        box-shadow: 10px 10px 60px #555;
-        display: inline-block;
-        height: auto;
-        max-width: 60%;
-        width: 60%;
+        height: auto; }
+      body .container .content .overlay-hover {
         position: absolute;
-        bottom: 20%;
-        right: 19%;
-        border-radius: 2%;
-        padding: 2% 5%; }
-      body .container .content .catergory-information .closebutton {
-        background-color: #fff;
-        border: 3px solid #999;
-        border-radius: 50px;
-        cursor: pointer;
-        display: inline-block;
-        font-family: arial;
-        font-weight: bold;
-        position: absolute;
-        top: -20px;
-        right: -20px;
-        font-size: 25px;
-        line-height: 30px;
-        width: 30px;
-        height: 30px;
-        text-align: center; }
-        body .container .content .catergory-information .closebutton:hover {
-          background-color: #ccc; }
-      body .container .content .catergory-information .pop_outtrigger {
-        cursor: pointer; }
-      body .container .content .catergory-information .pop_out1 {
-        cursor: pointer;
-        display: none;
-        height: 100%;
-        position: absolute;
-        text-align: center;
-        font-size: 120%;
-        font-weight: bold;
-        line-height: 120%;
         top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
         width: 100%;
-        z-index: 10; }
-      body .container .content .catergory-information .pop_out1 .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle; }
-      body .container .content .catergory-information .pop_out1 > div {
-        background-color: #fff;
-        box-shadow: 10px 10px 60px #555;
-        display: inline-block;
-        height: auto;
-        max-width: 60%;
-        width: 60%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #FF4C33; }
+      body .container .content .frame:hover .overlay-hover {
+        opacity: 1; }
+      body .container .content .overlay-text {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
         position: absolute;
-        bottom: 20%;
-        right: 19%;
-        border-radius: 2%;
-        padding: 2% 5%; }
-      body .container .content .catergory-information .closebutton1 {
-        background-color: #fff;
-        border: 3px solid #999;
-        border-radius: 50px;
-        cursor: pointer;
-        display: inline-block;
-        font-family: arial;
-        font-weight: bold;
-        position: absolute;
-        top: -20px;
-        right: -20px;
-        font-size: 25px;
-        line-height: 30px;
-        width: 30px;
-        height: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         text-align: center; }
-        body .container .content .catergory-information .closebutton1:hover {
-          background-color: #ccc; }
-      body .container .content .catergory-information .pop_outtrigger1 {
-        cursor: pointer; }
-      body .container .content .catergory-information .pop_out2 {
-        cursor: pointer;
-        display: none;
-        height: 100%;
-        position: absolute;
-        text-align: center;
-        font-size: 120%;
-        font-weight: bold;
-        line-height: 120%;
-        top: 0;
-        width: 100%;
-        z-index: 10; }
-      body .container .content .catergory-information .pop_out2 .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle; }
-      body .container .content .catergory-information .pop_out2 > div {
-        background-color: #fff;
-        box-shadow: 10px 10px 60px #555;
-        display: inline-block;
-        height: auto;
-        max-width: 60%;
-        width: 60%;
-        position: absolute;
-        bottom: 20%;
-        right: 19%;
-        border-radius: 2%;
-        padding: 2% 5%; }
-      body .container .content .catergory-information .closebutton2 {
-        background-color: #fff;
-        border: 3px solid #999;
-        border-radius: 50px;
-        cursor: pointer;
-        display: inline-block;
-        font-family: arial;
-        font-weight: bold;
-        position: absolute;
-        top: -20px;
-        right: -20px;
-        font-size: 25px;
-        line-height: 30px;
-        width: 30px;
-        height: 30px;
-        text-align: center; }
-        body .container .content .catergory-information .closebutton2:hover {
-          background-color: #ccc; }
-      body .container .content .catergory-information .pop_outtrigger2 {
-        cursor: pointer; }
-      body .container .content .catergory-information .pop_out3 {
-        cursor: pointer;
-        display: none;
-        height: 100%;
-        position: absolute;
-        text-align: center;
-        font-size: 120%;
-        font-weight: bold;
-        line-height: 120%;
-        top: 0;
-        width: 100%;
-        z-index: 10; }
-      body .container .content .catergory-information .pop_out3 .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle; }
-      body .container .content .catergory-information .pop_out3 > div {
-        background-color: #fff;
-        box-shadow: 10px 10px 60px #555;
-        display: inline-block;
-        height: auto;
-        max-width: 60%;
-        width: 60%;
-        position: absolute;
-        bottom: 20%;
-        right: 19%;
-        border-radius: 2%;
-        padding: 2% 5%; }
-      body .container .content .catergory-information .closebutton3 {
-        background-color: #fff;
-        border: 3px solid #999;
-        border-radius: 50px;
-        cursor: pointer;
-        display: inline-block;
-        font-family: arial;
-        font-weight: bold;
-        position: absolute;
-        top: -20px;
-        right: -20px;
-        font-size: 25px;
-        line-height: 30px;
-        width: 30px;
-        height: 30px;
-        text-align: center; }
-        body .container .content .catergory-information .closebutton3:hover {
-          background-color: #ccc; }
-      body .container .content .catergory-information .pop_outtrigger3 {
-        cursor: pointer; }
-  body .container footer {
-    position: relative;
-    bottom: -17%;
-    left: 16%; }
-    body .container footer p {
-      color: #FFFF; }
+      body .container .content .catergory-information {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        margin-top: 10%;
+        margin-bottom: 5%;
+        /* Pop-out box: camping BEGIN */
+        /* Pop-out box: camping END */
+        /* Pop-out box: fishing BEGIN */
+        /* Pop-out box: fishing END */
+        /* Pop-out box: hiking BEGIN */
+        /* Pop-out box: hiking END*/
+        /* Pop-out box: rock climbing BEGIN */
+        /* Pop-out box: rock climbing END */ }
+        body .container .content .catergory-information a {
+          color: #FF4C33;
+          text-decoration: none; }
+          body .container .content .catergory-information a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #FFFF; }
+        body .container .content .catergory-information .pop_out {
+          cursor: pointer;
+          display: none;
+          height: 100%;
+          position: absolute;
+          text-align: center;
+          font-size: 120%;
+          font-weight: bold;
+          line-height: 120%;
+          top: 0;
+          width: 100%;
+          z-index: 10; }
+        body .container .content .catergory-information .pop_out > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          box-shadow: 10px 10px 60px #555;
+          display: inline-block;
+          height: auto;
+          max-width: 60%;
+          width: 60%;
+          position: absolute;
+          bottom: 20%;
+          right: 19%;
+          border-radius: 2%;
+          padding: 2% 5%; }
+        body .container .content .catergory-information .closebutton {
+          background-color: #fff;
+          border: 3px solid #999;
+          border-radius: 50px;
+          cursor: pointer;
+          display: inline-block;
+          font-family: arial;
+          font-weight: bold;
+          position: absolute;
+          top: -20px;
+          right: -20px;
+          font-size: 25px;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
+          text-align: center; }
+          body .container .content .catergory-information .closebutton:hover {
+            background-color: #ccc; }
+        body .container .content .catergory-information .pop_outtrigger {
+          cursor: pointer; }
+        body .container .content .catergory-information .pop_out1 {
+          cursor: pointer;
+          display: none;
+          height: 100%;
+          position: absolute;
+          text-align: center;
+          font-size: 120%;
+          font-weight: bold;
+          line-height: 120%;
+          top: 0;
+          width: 100%;
+          z-index: 10; }
+        body .container .content .catergory-information .pop_out1 > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          box-shadow: 10px 10px 60px #555;
+          display: inline-block;
+          height: auto;
+          max-width: 60%;
+          width: 60%;
+          position: absolute;
+          bottom: 20%;
+          right: 19%;
+          border-radius: 2%;
+          padding: 2% 5%; }
+        body .container .content .catergory-information .closebutton1 {
+          background-color: #fff;
+          border: 3px solid #999;
+          border-radius: 50px;
+          cursor: pointer;
+          display: inline-block;
+          font-family: arial;
+          font-weight: bold;
+          position: absolute;
+          top: -20px;
+          right: -20px;
+          font-size: 25px;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
+          text-align: center; }
+          body .container .content .catergory-information .closebutton1:hover {
+            background-color: #ccc; }
+        body .container .content .catergory-information .pop_outtrigger1 {
+          cursor: pointer; }
+        body .container .content .catergory-information .pop_out2 {
+          cursor: pointer;
+          display: none;
+          height: 100%;
+          position: absolute;
+          text-align: center;
+          font-size: 120%;
+          font-weight: bold;
+          line-height: 120%;
+          top: 0;
+          width: 100%;
+          z-index: 10; }
+        body .container .content .catergory-information .pop_out2 > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          box-shadow: 10px 10px 60px #555;
+          display: inline-block;
+          height: auto;
+          max-width: 60%;
+          width: 60%;
+          position: absolute;
+          bottom: 20%;
+          right: 19%;
+          border-radius: 2%;
+          padding: 2% 5%; }
+        body .container .content .catergory-information .closebutton2 {
+          background-color: #fff;
+          border: 3px solid #999;
+          border-radius: 50px;
+          cursor: pointer;
+          display: inline-block;
+          font-family: arial;
+          font-weight: bold;
+          position: absolute;
+          top: -20px;
+          right: -20px;
+          font-size: 25px;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
+          text-align: center; }
+          body .container .content .catergory-information .closebutton2:hover {
+            background-color: #ccc; }
+        body .container .content .catergory-information .pop_outtrigger2 {
+          cursor: pointer; }
+        body .container .content .catergory-information .pop_out3 {
+          cursor: pointer;
+          display: none;
+          height: 100%;
+          position: absolute;
+          text-align: center;
+          font-size: 120%;
+          font-weight: bold;
+          line-height: 120%;
+          top: 0;
+          width: 100%;
+          z-index: 10; }
+        body .container .content .catergory-information .pop_out3 > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          box-shadow: 10px 10px 60px #555;
+          display: inline-block;
+          height: auto;
+          max-width: 60%;
+          width: 60%;
+          position: absolute;
+          bottom: 20%;
+          right: 19%;
+          border-radius: 2%;
+          padding: 2% 5%; }
+        body .container .content .catergory-information .closebutton3 {
+          background-color: #fff;
+          border: 3px solid #999;
+          border-radius: 50px;
+          cursor: pointer;
+          display: inline-block;
+          font-family: arial;
+          font-weight: bold;
+          position: absolute;
+          top: -20px;
+          right: -20px;
+          font-size: 25px;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
+          text-align: center; }
+          body .container .content .catergory-information .closebutton3:hover {
+            background-color: #ccc; }
+        body .container .content .catergory-information .pop_outtrigger3 {
+          cursor: pointer; }
+    body .container footer {
+      position: absolute;
+      bottom: -30%;
+      left: 14%; }
+      body .container footer p {
+        color: #FFFF; }
 
 /*# sourceMappingURL=styleHome.css.map */
